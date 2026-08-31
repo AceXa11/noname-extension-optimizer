@@ -1,0 +1,26 @@
+
+
+.menu-container > .menu.main,
+.menu-container > .menu.main.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	transform-origin: center;
+}
+
+.menu-container > .menu.main {
+	transform: scale(1);
+	transition: transform 0.3s, opacity 0.3s;
+}
+.menu-container.hidden > .menu.main {
+	transform: scale(0.5);
+	opacity: 0;
+	transform-origin: center;
+}
+
+
+.menu-container > .menu.main:not(.center) {	
+	top: 50% !important;
+	left: 50% !important;
+}

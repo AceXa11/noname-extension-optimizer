@@ -1,0 +1,118 @@
+.dialog .buttons>.button.character,
+.button.character.longcharacter {
+    height: 158px;
+    background-size: cover;
+}
+
+.dialog.nobutton:not(.scroll1):not(.scroll2) {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 1px, rgba(0, 0, 0, 0.3) 0 3px 10px;
+    border-radius: 3px;
+}
+
+#arena.choose-character>.dialog.scroll3 {
+    height: calc(100% - 340px);
+}
+
+#arena.choose-character>.dialog {
+    width: 600px;
+    height: calc(100% - 280px);
+    bottom: auto;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+#arena>.dialog,
+#arena.choose-character>.dialog,
+#arena.choose-character>.dialog.scroll3 {
+    height: auto !important;
+    min-height: fit-content;
+}
+
+.dialog,
+.dialog>.content-container,
+.dialog>.content-container>.content {
+    height: auto !important;
+    position: relative !important;
+    /* top: auto !important;
+    bottom: auto !important; */
+}
+
+.dialog {
+    display: flex !important;
+    flex-direction: column !important;
+    bottom: auto;
+    top: 50% !important;
+    left: 50% !important;
+    translate: -50% -50% !important;
+}
+
+.dialog.main.menu {
+    height: auto !important;
+    max-height: calc(100vh - 120px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+}
+
+.dialog.main.menu>.menu-content {
+    height: auto !important;
+    max-height: calc(100vh - 280px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+}
+
+/* 关键：真正包着左右栏的那一层 */
+.dialog.main.menu .menu-content>div {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    /* 顶部对齐 */
+    height: auto !important;
+    max-height: calc(100vh - 280px) !important;
+    overflow: hidden !important;
+}
+
+.dialog.main.menu .left.pane {
+    height: auto !important;
+    max-height: calc(100vh - 280px) !important;
+    overflow-y: auto !important;
+    position: relative !important;
+    align-self: flex-start !important;
+    flex-shrink: 0;
+    /* 防止被压缩 */
+}
+
+.dialog.main.menu .right.pane {
+    left: 0 !important;
+    height: auto !important;
+    max-height: calc(100vh - 280px) !important;
+    overflow-y: auto !important;
+    position: relative !important;
+    align-self: flex-start !important;
+    flex: 1;
+    /* 右侧占剩余宽度 */
+}
+
+.dialog.main.menu .right.pane>div {
+    position: relative !important;
+    height: auto !important;
+    /* 不要 100%，避免被拉高 */
+    min-height: 400px;
+}
+
+.menu.main>.menu-content>div>.menubutton.round {
+    right: 10px;
+    bottom: 10px;
+    left: auto;
+    top: auto;
+}
+
+.caption > .text {
+    width: auto !important;
+    padding: 3px 10px;
+}

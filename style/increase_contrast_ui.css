@@ -1,0 +1,32 @@
+/* .card:not(*:empty),
+.cardbg {
+	background-color: rgb(255 255 255 / 21%);
+	-webkit-backdrop-filter: none;
+	backdrop-filter: blur(20px) saturate(180%);
+} */
+.card>.range,
+.card>.name,
+.card.fullskin>.name {
+	color: rgb(50 17 0);
+	background-color: rgb(255 255 255 / 70%);
+	text-shadow: none;
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+}
+
+body #arena .player:not(.selectable):not(.selected).glow_phase {
+	box-shadow: rgb(10, 155, 67) 0px 0px 10px 10px !important;
+}
+
+body #arena .equips .card.emptyequip.hidden {
+	height: 0px;
+}
+
+body #arena .equips .card.fullskin {
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+
+.card.fullskin > .info {
+    font-size: 20px;
+}
