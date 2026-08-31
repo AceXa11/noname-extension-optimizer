@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
 		}) as PluginOption,
 	],
 	build: {
-		sourcemap: true,
+		sourcemap: false,
 		minify: false,
 		lib: {
 			entry: {

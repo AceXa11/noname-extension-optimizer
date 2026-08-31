@@ -4,7 +4,7 @@ export const type = "extension";
 
 export default function (): importExtensionConfig {
 	return {
-		name: "Optimizer",
+		name: "optimizer",
 		editable: false,
 		connect: false,
 		content,

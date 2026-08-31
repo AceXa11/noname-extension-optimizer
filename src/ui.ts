@@ -7,7 +7,7 @@ export class OptimizerUI {
     private optionNameDialog = "dialog_ui";
     private _updateBak = null; 
     onclickGlass(item: any) {
-        game.saveExtensionConfig("Optimizer", this.optionNameGlass, item);
+        game.saveExtensionConfig("optimizer", this.optionNameGlass, item);
         if (item) {
             utils.loadStyles(this.optionNameGlass);
         } else {
@@ -15,7 +15,7 @@ export class OptimizerUI {
         }
     }
     onclickIncreaseContrast(item: any) {
-        game.saveExtensionConfig("Optimizer", this.optionNameIncreaseContrast, item);
+        game.saveExtensionConfig("optimizer", this.optionNameIncreaseContrast, item);
         if (item) {
             utils.loadStyles(this.optionNameIncreaseContrast);
         } else {
@@ -23,7 +23,7 @@ export class OptimizerUI {
         }
     }
     onclickDialog(item: any) {
-        game.saveExtensionConfig("Optimizer", this.optionNameDialog, item);
+        game.saveExtensionConfig("optimizer", this.optionNameDialog, item);
         if (item) {
             if (ui) {
                 this._updateBak = ui.update;
@@ -39,9 +39,9 @@ export class OptimizerUI {
         }
     }
     constructor() {
-        this.onclickGlass(game.getExtensionConfig("Optimizer", this.optionNameGlass));
-        this.onclickIncreaseContrast(game.getExtensionConfig("Optimizer", this.optionNameIncreaseContrast));
-        this.onclickDialog(game.getExtensionConfig("Optimizer", this.optionNameDialog));
+        this.onclickGlass(game.getExtensionConfig("optimizer", this.optionNameGlass));
+        this.onclickIncreaseContrast(game.getExtensionConfig("optimizer", this.optionNameIncreaseContrast));
+        this.onclickDialog(game.getExtensionConfig("optimizer", this.optionNameDialog));
     }
 
 }

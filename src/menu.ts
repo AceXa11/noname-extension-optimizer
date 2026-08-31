@@ -5,7 +5,7 @@ export class Menu {
     private optionName = "menu_center";
 
     onclick(item: any) {
-        game.saveExtensionConfig("Optimizer", this.optionName, item);
+        game.saveExtensionConfig("optimizer", this.optionName, item);
         if (item) {
             utils.loadStyles(this.optionName);
         } else {
@@ -14,7 +14,7 @@ export class Menu {
     }
 
     applyFromConfig() {
-         this.onclick(game.getExtensionConfig("Optimizer", this.optionName));
+         this.onclick(game.getExtensionConfig("optimizer", this.optionName));
     }
 }
 

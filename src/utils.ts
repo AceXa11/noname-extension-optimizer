@@ -9,7 +9,7 @@ export function loadStyles(cssPath: string) {
     link.rel = "stylesheet";
     link.href = `${lib.assetURL}extension/optimizer/style/${cssPath}.css`;
     document.head.appendChild(link);
-    console.log(`Optimizer ${cssPath} styles loaded.`);
+    console.log(`optimizer ${cssPath} styles loaded.`);
 }
 
 export function removeStyles(cssPath: string) {
@@ -17,7 +17,7 @@ export function removeStyles(cssPath: string) {
     if (!link) return;
 
     link.remove();
-    console.log(`Optimizer ${cssPath} styles removed.`);
+    console.log(`optimizer ${cssPath} styles removed.`);
 }
 
 // export function menuTabBarOptimizer(menu: HTMLElement) {
