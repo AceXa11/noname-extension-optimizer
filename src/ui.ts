@@ -25,16 +25,16 @@ export class OptimizerUI {
     onclickDialog(item: any) {
         game.saveExtensionConfig("optimizer", this.optionNameDialog, item);
         if (item) {
-            if (ui) {
-                this._updateBak = ui.update;
-                ui.update = update;
-            }
+            // if (ui) {
+            //     this._updateBak = ui.update;
+            //     ui.update = update;
+            // }
             utils.loadStyles(this.optionNameDialog);
         } else {
-            if (ui && this._updateBak) {
-                ui.update = this._updateBak;
-                this._updateBak = null;
-            }
+            // if (ui && this._updateBak) {
+            //     ui.update = this._updateBak;
+            //     this._updateBak = null;
+            // }
             utils.removeStyles(this.optionNameDialog);
         }
     }

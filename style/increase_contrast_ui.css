@@ -27,6 +27,6 @@ body #arena .equips .card.fullskin {
 	-webkit-backdrop-filter: blur(3px);
 }
 
-.card.fullskin > .info {
-    font-size: 20px;
+.card.fullskin>.info {
+	font-size: 20px;
 }

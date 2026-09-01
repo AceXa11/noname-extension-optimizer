@@ -12,6 +12,12 @@
     border-radius: 3px;
 }
 
+/* .caption > .text {
+    width: auto !important;
+    padding: 3px 10px;
+} 
+
+
 #arena.choose-character>.dialog.scroll3 {
     height: calc(100% - 340px);
 }
@@ -37,8 +43,6 @@
 .dialog>.content-container>.content {
     height: auto !important;
     position: relative !important;
-    /* top: auto !important;
-    bottom: auto !important; */
 }
 
 .dialog {
@@ -66,12 +70,10 @@
     overflow: hidden !important;
 }
 
-/* 关键：真正包着左右栏的那一层 */
 .dialog.main.menu .menu-content>div {
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
-    /* 顶部对齐 */
     height: auto !important;
     max-height: calc(100vh - 280px) !important;
     overflow: hidden !important;
@@ -84,7 +86,6 @@
     position: relative !important;
     align-self: flex-start !important;
     flex-shrink: 0;
-    /* 防止被压缩 */
 }
 
 .dialog.main.menu .right.pane {
@@ -95,24 +96,12 @@
     position: relative !important;
     align-self: flex-start !important;
     flex: 1;
-    /* 右侧占剩余宽度 */
 }
 
 .dialog.main.menu .right.pane>div {
     position: relative !important;
     height: auto !important;
-    /* 不要 100%，避免被拉高 */
     min-height: 400px;
-}
+}    
 
-.menu.main>.menu-content>div>.menubutton.round {
-    right: 10px;
-    bottom: 10px;
-    left: auto;
-    top: auto;
-}
-
-.caption > .text {
-    width: auto !important;
-    padding: 3px 10px;
-}
+*/

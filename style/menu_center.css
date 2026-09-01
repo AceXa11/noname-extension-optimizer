@@ -7,6 +7,7 @@
 	left: 50%;
 	translate: -50% -50%;
 	transform-origin: center;
+	height: 400px;
 }
 
 .menu-container > .menu.main {
@@ -23,4 +24,11 @@
 .menu-container > .menu.main:not(.center) {	
 	top: 50% !important;
 	left: 50% !important;
+}
+
+.menu.main>.menu-content>div>.menubutton.round {
+    right: 10px;
+    bottom: 10px;
+    left: auto;
+    top: auto;
 }
